@@ -29,12 +29,30 @@
         % 1.1
         \item Il rapporto $\theta_1 / \theta_2$
         \newline 
-        \textbf{Risoluzione}:
+        \textbf{Risoluzione}: Si inizia scrivendo le componenti delle forze che agiscono sulle sferette: quella gravitazionale che agisce in verticale 
+        e quella elettrostatica che agisce in orizzontale, ottenendo così 
+        \begin{align*}
+            F_g & = mg \\
+            F_e & = \frac{1}{4 \pi \epsilon_0} \frac{2q \cdot q}{d^2}
+        \end{align*}
+        Si nota che le forze sono uguali in modulo ed opposte in verso, dunque la forza elettrostatica è uguale, per poi notare che anche la componente verticale 
+        è identica essento identiche le masse. Si potrebbero poi ricordare le formule che permettono di calcolare il rapporto, oppure più semplicemente si nota come le 
+        due cariche siano simmetriche rispetto la verticale e che quindi $\theta_1 = \theta_2 \Rightarrow \theta_1 / \theta_2 = 1$ 
         % 1.2
         \item Se la distanza fra le due sferette all’equilibrio è $r = 10cm$, calcolare il valore di $q$
         \newline 
-        \textbf{Risoluzione}:
-
+        \textbf{Risoluzione}: Tratto tutto come un problema geometrico, avendo le proiezioni dei fili e le forze sia verticali che orizzontali, calcolo il rapporto 
+        $F_e : h = F_g : \frac{r}{2}$ (con $h$ distanza tra la retta passante per le sferette ed il punto in cui sono appese, di valore 
+        $h = \sqrt{l^2 - \left( \frac{r}{2}\right)^2}$):
+        \begin{align*}
+            \frac{2q^2}{4 \pi \epsilon_0 r^2} : \frac{r}{2} = mg : \sqrt{l^2 - \left( \frac{r}{2}\right)^2} \\
+            \frac{2q^2}{4 \pi \epsilon_0 r^2} = 2 \cdot \frac{mg \cdot \sqrt{l^2 - \left( \frac{r}{2}\right)^2}}{r} \\ 
+            q = 4 \pi \epsilon_0 r \cdot mg \cdot \sqrt{l^2 - \left( \frac{r}{2}\right)^2}
+        \end{align*}
+        \textbf{Domanda}: Cos'è quel $2$ all'inizio della seconda equazione, e che fine ha fatto il denominatore nella terza?
+        \newline
+        Il $2$ viene da $\frac{r}{2}$ che essendo al denominatore salta su, salvo poi semplificarsi nella terza con il $2$ della $q$ ed $r$ con $r^2$ al numeratore.
+ 
     \end{enumerate}
 
     % 2
@@ -44,20 +62,49 @@
     \begin{enumerate}
         
         % 2.1
-        \item Il vettore campo elettrico nei due vertici dove si trova la carica q_3
+        \item Il vettore campo elettrico nei due vertici dove si trova la carica $q_3$
         \newline 
-        \textbf{Risoluzione}:
+        \textbf{Risoluzione}: Si applica la formula del campo ricavandone le componenti, ricordando che se la forza è positiva allora è repulsiva, altrimenti è attrattiva.
+        
+        \begin{align*}
+            E_1x & = \frac{1}{4 \pi \epsilon_0} \frac{q_1}{a^2} \\
+            E_1y & = \frac{1}{4 \pi \epsilon_0} \frac{q_2}{b^2} \\
+            E_2x & = \frac{1}{4 \pi \epsilon_0} \frac{q_2}{a^2} \\
+            E_2x & = \frac{1}{4 \pi \epsilon_0} \frac{q_1}{b^2}
+        \end{align*}
+
+        Da qui avrò che il vettore campo negli angoli del quadrilaterò sarà 
+        \begin{align*}
+            E_1 & = \vec{u_x} + \vec{u_y} \\
+            |E_1| & = RISULTATO \\
+            E_2 & = \vec{u_x} + \vec{u_y} \\
+            |E_2| & = RISULTATO
+        \end{align*}
+
+
 
         % 2.2
         \item La forza che agisce sulla carica in entrambi i vertici
         \newline 
-        \textbf{Risoluzione}:
+        \textbf{Risoluzione}: La ottengo moltiplicando il campo $E$ per la carica $q_3$ nel punto
+        \begin{align*}
+            F_1 & = q_3E_1 = RISULTATO \\
+            F_2 & = q_3E_2 = RISULTATO
+        \end{align*}
 
         % 2.3
         \item Il lavoro compiuto dalle forze elettrostatiche per spostare una carica $q_3$
-        = $0.5 \cdot 10{-9}$ da un vertice a quello opposto
+        = $0.5 \cdot 10^{-9}$ da un vertice a quello opposto
         \newline 
-        \textbf{Risoluzione}:
+        \textbf{Risoluzione}: Il lavoro è definito $W = -\Delta U = -\Delta V$, da qui
+        \begin{align*}
+            V_1 & = \frac{1}{4 \pi \epsilon_0}\frac{q_1q_3}{a} + \frac{1}{4 \pi \epsilon_0}\frac{q_2q_3}{b} \\ 
+                & = \frac{q_3}{4 \pi \epsilon_0} \left( \frac{q_1}{a} + \frac{q_2}{b} \right) \\ 
+            V_2 & = \frac{1}{4 \pi \epsilon_0}\frac{q_1q_3}{b} + \frac{1}{4 \pi \epsilon_0}\frac{q_2q_3}{a} \\ 
+                & = \frac{q_3}{4 \pi \epsilon_0} \left( \frac{q_1}{b} + \frac{q_2}{a} \right) \\
+            W   & = V_2 - V_1 = RISULTATO
+        \end{align*} 
+
 
     \end{enumerate}
 
@@ -79,7 +126,7 @@
         \textbf{Risoluzione}:
         
         % 3.3
-        \item L’energia potenziale magnetica U_m 
+        \item L’energia potenziale magnetica $U_m$
         \newline 
         \textbf{Risoluzione}:
 
@@ -105,5 +152,7 @@
         \textbf{Risoluzione}:
 
     \end{enumerate}
+
+\end{enumerate}
 
 \end{document}
